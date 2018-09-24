@@ -15,4 +15,12 @@ answers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - d
 import random
 
 #Found this on stackoverflow (https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list)
-print(random.choice(answers))
+#print(random.choice(answers))
+
+status = ""
+
+while status != "quit":
+	question()
+	print(random.choice(answers))
+	status = input("Continue? Y for continue, 'quit' to end")
+
